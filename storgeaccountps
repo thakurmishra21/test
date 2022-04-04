@@ -1,4 +1,6 @@
 Param($pClientId, $pKey,$pTenantId,$pSubscriptionId)
+Install-Module -Name Az.Storage -force
+
 $clientID = $pClientId
 $key = $pKey
 $SecurePassword = $key | ConvertTo-SecureString -AsPlainText -Force
